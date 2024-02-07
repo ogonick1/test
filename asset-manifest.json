@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/test/static/css/main.b573bd4c.css",
+    "main.css": "/test/static/css/main.7592d8f2.css",
     "main.js": "/test/static/js/main.96591567.js",
     "static/media/cardImg.webp": "/test/static/media/cardImg.0f7740c610bb8137dba9.webp",
     "static/media/RedHatDisplay-Italic.ttf": "/test/static/media/RedHatDisplay-Italic.ecbb61d7639c5b6b0957.ttf",
@@ -27,11 +27,11 @@
     "static/media/Subtract.svg": "/test/static/media/Subtract.6a9075383a4064df81f1ad9fdcef874b.svg",
     "static/media/facebook.svg": "/test/static/media/facebook.df899421c4d08c172910878922d5245a.svg",
     "static/media/2.svg": "/test/static/media/2.916f621ed9f216e8bccd931060b73237.svg",
-    "main.b573bd4c.css.map": "/test/static/css/main.b573bd4c.css.map",
+    "main.7592d8f2.css.map": "/test/static/css/main.7592d8f2.css.map",
     "main.96591567.js.map": "/test/static/js/main.96591567.js.map"
   },
   "entrypoints": [
-    "static/css/main.b573bd4c.css",
+    "static/css/main.7592d8f2.css",
     "static/js/main.96591567.js"
   ]
 }
