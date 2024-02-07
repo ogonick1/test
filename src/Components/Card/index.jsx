@@ -5,7 +5,13 @@ const Card = ({ cardImg, title, author, date }) => {
   return (
     <div className="card__container">
       <div className="card__wrapper">
-        <img className="card__img" src={cardImg} alt="card image" />
+        <img
+          width={347}
+          height={171}
+          className="card__img"
+          src={cardImg}
+          alt="card image"
+        />
         <div className="card__title">{title}</div>
         <div className="card__info">
           <div className="card__info-author">

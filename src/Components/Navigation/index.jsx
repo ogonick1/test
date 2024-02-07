@@ -38,6 +38,8 @@ const Navigation = () => {
           placeholder="Search for..."
         />
         <img
+          width={20}
+          height={20}
           className="navigation__search-icon"
           src={searchIcon}
           alt="search icon"
@@ -51,6 +53,8 @@ const Navigation = () => {
             placeholder="Search for..."
           />
           <img
+            width={20}
+            height={20}
             className="navigation__search-icon"
             src={searchIcon}
             alt="search icon"

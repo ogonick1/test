@@ -40,6 +40,8 @@ const Banner = () => {
                 return (
                   <button key={index} className="banner__btn">
                     <img
+                      width={14}
+                      height={14}
                       className="banner__btn-icon"
                       src={i.icon}
                       alt="icon-btn"

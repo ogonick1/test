@@ -58,7 +58,12 @@ const Footer = () => {
                 <li className="footer__icon" key={index}>
                   <a href="#">
                     {" "}
-                    <img src={i.icon} alt={i.alt} />
+                    <img
+                      width={18}
+                      height={18}
+                      src={i.icon}
+                      alt={i.alt}
+                    />
                   </a>
                 </li>
               );
