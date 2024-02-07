@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test/static/css/main.b1844fea.css",
-    "main.js": "/test/static/js/main.89c883aa.js",
+    "main.css": "/test/static/css/main.b573bd4c.css",
+    "main.js": "/test/static/js/main.96591567.js",
     "static/media/cardImg.webp": "/test/static/media/cardImg.0f7740c610bb8137dba9.webp",
     "static/media/RedHatDisplay-Italic.ttf": "/test/static/media/RedHatDisplay-Italic.ecbb61d7639c5b6b0957.ttf",
     "static/media/RedHatDisplay-Medium.ttf": "/test/static/media/RedHatDisplay-Medium.3f3a8f4b5d0861029630.ttf",
@@ -27,11 +27,11 @@
     "static/media/Subtract.svg": "/test/static/media/Subtract.6a9075383a4064df81f1ad9fdcef874b.svg",
     "static/media/facebook.svg": "/test/static/media/facebook.df899421c4d08c172910878922d5245a.svg",
     "static/media/2.svg": "/test/static/media/2.916f621ed9f216e8bccd931060b73237.svg",
-    "main.b1844fea.css.map": "/test/static/css/main.b1844fea.css.map",
-    "main.89c883aa.js.map": "/test/static/js/main.89c883aa.js.map"
+    "main.b573bd4c.css.map": "/test/static/css/main.b573bd4c.css.map",
+    "main.96591567.js.map": "/test/static/js/main.96591567.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1844fea.css",
-    "static/js/main.89c883aa.js"
+    "static/css/main.b573bd4c.css",
+    "static/js/main.96591567.js"
   ]
 }
