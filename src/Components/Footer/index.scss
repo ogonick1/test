@@ -1,0 +1,127 @@
+@import "../../sass/variables";
+@import "../../sass/mixin";
+
+.footer {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 40px;
+  box-shadow: 0 3px 15px 0 rgb(0 0 0 / 16%);
+  background: $bg-color-gradient;
+  min-height: 434px;
+
+  &__container {
+    @include container;
+
+    justify-content: flex-start;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    gap: 55px;
+
+    @media (width <= 900px) {
+      gap: 20px;
+    }
+
+    @media (width <= 850px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__logo-wrapper {
+    width: 351px;
+    height: 394px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px 0 rgb(0 0 0 / 16%);
+    background: var(--bg-card-color);
+
+    @media (width <= 850px) {
+      width: 100%;
+    }
+  }
+
+  &__logo {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 77%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--logotype-color);
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom: 65px;
+    cursor: pointer;
+  }
+
+  &__logo-description {
+    margin-left: 30px;
+    color: var(--footer-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    width: 286px;
+
+    @media (width <= 850px) {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      width: 80%;
+      align-items: center;
+    }
+  }
+
+  &__icons-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 37px;
+    margin-bottom: 21px;
+    gap: 25px;
+    padding-left: 0;
+  }
+
+  &__icon {
+    list-style: none;
+    transition: all 0.8s ease-in-out;
+    filter: var(--filter-svg);
+
+    :hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__section-links-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    @media (width <= 550px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__section-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__section-links-description {
+    margin-top: 66px;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.5px;
+    color: $header-text-color;
+
+    @media (width <= 850px) {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      align-items: center;
+    }
+  }
+}

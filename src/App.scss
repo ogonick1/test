@@ -1,0 +1,27 @@
+:root[data-theme="light"] {
+  --background-color: rgb(252 252 252);
+  --logotype-color: rgb(30 30 30);
+  --navigation-input: rgb(238 238 238);
+  --navigation-input-color: rgb(112 112 112);
+  --bg-card-color: rgb(255 255 255);
+  --footer-text-color: rgb(13 208 186);
+  --filter-svg: invert(60%) sepia(100%) saturate(338%) hue-rotate(124deg)
+    brightness(87%) contrast(110%);
+}
+
+:root[data-theme="dark"] {
+  --background-color: rgb(30 30 30);
+  --logotype-color: rgb(252 252 252);
+  --navigation-input: rgb(24 58 93);
+  --navigation-input-color: rgb(255 255 255);
+  --bg-card-color: rgb(32 36 52);
+  --footer-text-color: rgb(255 255 255);
+  --filter-svg: none;
+}
+
+body {
+  background: var(--background-color);
+}
+
+@media (width >= 453px) and (width <= 768px) {
+}

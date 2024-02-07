@@ -1,0 +1,29 @@
+.rating {
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 33px;
+    height: 35px;
+    border-radius: 17px;
+    transition: background-color 1s ease;
+
+    @media (width <= 870px) {
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 120%;
+    height: 14px;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+
+    &.active {
+      color: rgb(112 112 112);
+    }
+  }
+}

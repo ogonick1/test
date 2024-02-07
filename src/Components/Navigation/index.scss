@@ -1,0 +1,155 @@
+@import "../../sass/variables";
+@import "../../sass/mixin";
+
+.navigation {
+  &__container {
+    position: relative;
+
+    @include container;
+
+    height: 110px;
+
+    @media (width <= 768px) {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .header__menu-items-container {
+      gap: 40px;
+      margin-top: 100px;
+      display: block;
+
+      .header__menu-item-text {
+        color: var(--navigation-input-color);
+      }
+    }
+  }
+
+  &__menu-items-container {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    @media (width <= 540px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__menu-item {
+    color: var(--navigation-input-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  &__menu-item-icon {
+    padding-right: 5px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    @media (width <= 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      height: 60px;
+      width: 100%;
+      gap: 20px;
+    }
+  }
+
+  &__logotype {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--logotype-color);
+
+    @media (width <= 768px) {
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+
+    @media (width <= 768px) {
+      display: none;
+      gap: 10px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.5px;
+    color: $secondary-text-color;
+  }
+
+  &__input-container {
+    @include input-container;
+
+    @media (width <= 768px) {
+      display: none;
+    }
+  }
+
+  &__input {
+    @include input;
+  }
+
+  &__input-container-mobile {
+    @include input-container;
+
+    @media (width <= 768px) {
+      width: 100%;
+    }
+  }
+
+  &__input-mobile {
+    @include input;
+
+    @media (width <= 768px) {
+      width: 100%;
+    }
+  }
+
+  &__search-icon {
+    height: 20px;
+    position: absolute;
+    right: 9px;
+  }
+
+  &__mobile-menu {
+    margin-top: 100px;
+  }
+
+  &__mobile-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__mobile-item {
+    text-decoration: none;
+    color: $secondary-text-color;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.5px;
+  }
+}

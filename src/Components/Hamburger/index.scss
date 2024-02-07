@@ -1,0 +1,81 @@
+@import "../../sass/variables";
+@import "../../sass/mixin";
+
+.hamburger {
+  top: 50%;
+  left: 10%;
+  width: 22px;
+  height: 2px;
+  background: var(--navigation-input-color);
+  position: absolute;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+  transition: 0.5s;
+}
+
+.hamburger::before {
+  top: -6px;
+}
+
+.hamburger::after {
+  top: 6px;
+}
+
+.icon-one {
+  display: none;
+  position: absolute;
+  top: 18px;
+  right: 29px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+
+  @media (width <= 768px) {
+    display: block;
+  }
+}
+
+.hamburger-one::before,
+.hamburger-one::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background: var(--navigation-input-color);
+  box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+  transition: 0.5s;
+}
+
+.icon-one.active-one .hamburger-one {
+  background: rgb(0 0 0 / 0%);
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0%);
+}
+
+.icon-one.active-one .hamburger-one::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.icon-one.active-one .hamburger-one::after {
+  top: 0;
+  transform: rotate(135deg);
+  box-shadow: 0 -2px 5px rgb(0 0 0 / 20%);
+}
+
+.hamburger-container {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  color: var(--navigation-input-color);
+
+  p {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: var(--navigation-input-color);
+  }
+
+  @media (width >= 768px) {
+    display: none;
+  }
+}

@@ -1,0 +1,69 @@
+.toggler__switch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 54px;
+  height: 29px;
+  transform: translate(-50%, -50%);
+
+  input {
+    display: none;
+  }
+
+  .toggler__slider {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    overflow: hidden;
+    background-color: rgb(255 255 255);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 1.4s;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      left: 3px;
+      width: 25px;
+      height: 25px;
+      background-color: rgb(24 58 93);
+      border-radius: 30px;
+      background: url("../../assets/icon/span_before.png");
+    }
+
+    &::before {
+      transition: 0.4s;
+    }
+
+    &::after {
+      transition: 0.5s;
+    }
+  }
+
+  .toggler__wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 54px;
+    height: 29px;
+    border-radius: 40px;
+    transition: all 1.4s;
+  }
+
+  input:checked + .toggler__slider {
+    background-color: rgb(24 58 93);
+
+    &::before,
+    &::after {
+      transform: translateX(23px);
+      background: url("../../assets/icon/span_befor.png");
+    }
+  }
+
+  input:checked ~ .toggler__wave {
+    display: block;
+    background-color: #3398d9;
+  }
+}

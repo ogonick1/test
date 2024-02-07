@@ -1,0 +1,72 @@
+@import "../../sass//variables";
+@import "../../sass//mixin.scss";
+
+.card {
+  &__container {
+    width: 387px;
+    height: 279px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 3px 16px 0 rgb(42 134 229 / 8%);
+    transition: all 0.2s ease-in-out;
+
+    :hover {
+      box-shadow: 0 3px 16px 0 rgb(42 134 229 / 20%);
+      border-radius: 20px;
+    }
+
+    @media (width <= 850px) {
+      width: 367px;
+    }
+  }
+
+  &__wrapper {
+    margin: 20px;
+  }
+
+  &__img {
+    border-radius: 20px;
+    width: 347px;
+    height: 171px;
+  }
+
+  &__title {
+    align-self: stretch;
+    flex-grow: 0;
+    margin-top: 10px;
+    color: $secondary-text-color;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+    padding-left: 10px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    color: rgb(179 179 177);
+    font-family: "Red Hat Display";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding-bottom: 20px;
+
+    &-author {
+      display: flex;
+      gap: 6px;
+    }
+
+    &-date {
+      display: flex;
+      gap: 6px;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+@import "../../sass/variables";
+@import "../../sass/mixin";
+
+.header {
+  width: 100%;
+  background: $bg-color-gradient;
+  align-items: center;
+
+  &__social {
+    position: fixed;
+    left: 0;
+    top: 30%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &-item {
+      width: 40px;
+      height: 40px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      :hover {
+        transform: scale(1.1);
+        border-radius: 5px;
+      }
+    }
+
+    @media (width <= 768px) {
+      display: none;
+    }
+  }
+
+  &__container {
+    @include container;
+
+    height: 50px;
+
+    @media (width <= 768px) {
+      justify-content: center;
+    }
+  }
+
+  &__menu-items-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    overflow: hidden;
+
+    @media (width <= 850px) {
+      gap: 15px;
+    }
+
+    @media (width <= 768px) {
+      display: none;
+    }
+
+    @media (width <= 375px) {
+      display: none;
+    }
+  }
+
+  &__menu-item {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+
+    :hover {
+      background: rgb(13 208 186 / 50%);
+      transition: ease-in-out 0.5s;
+      border-radius: 2px;
+    }
+  }
+
+  &__menu-item-icon {
+    width: auto;
+    margin-right: 3px;
+  }
+
+  &__menu-item-text {
+    color: rgb(255 255 255);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    text-align: left;
+  }
+
+  &__links-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media (width <= 768px) {
+      width: 600px;
+    }
+  }
+
+  &__links-icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__links-item {
+    display: flex;
+    width: 29px;
+    height: 29px;
+    align-items: center;
+
+    :hover {
+      transform: scale(1.1);
+      transition: ease-in-out 0.5s;
+    }
+  }
+
+  &__links-icon {
+    margin: 0 auto;
+    height: 14px;
+    width: auto;
+  }
+
+  &__switch-button {
+    width: 54px;
+    position: relative;
+  }
+}

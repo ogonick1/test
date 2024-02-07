@@ -1,0 +1,114 @@
+@import "../../sass//variables";
+@import "../../sass//mixin.scss";
+
+.info {
+  &__container {
+    @include container;
+
+    align-items: flex-start;
+    margin-top: 46px;
+    margin-bottom: 50px;
+
+    @media (width <= 1120px) {
+      justify-content: center;
+    }
+
+    @media (width <= 850px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 810px;
+  }
+
+  &__nav {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    height: 18px;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    cursor: pointer;
+    overflow: hidden;
+
+    &-item {
+      color: $primary-text-color;
+      padding-right: 5px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.5px;
+      text-align: left;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 900;
+    font-size: 42px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #0dd0ba 0%, #2a86e5 100%);
+    background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__description {
+    color: var(--navigation-input-color);
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+  }
+
+  &__articles-wrapper {
+    margin-top: 60px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      width: 43.92px;
+      height: 8px;
+      border-radius: 20px;
+      background: linear-gradient(
+        90deg,
+        rgb(13 208 186),
+        rgb(42 134 229) 100%
+      );
+      margin-top: 9px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__articles {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--navigation-input-color);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+  }
+
+  &__card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  &__ads {
+    @media (width <= 1120px) {
+      display: none;
+    }
+  }
+}
