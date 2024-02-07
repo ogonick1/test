@@ -81,22 +81,21 @@ const Banner = () => {
       <div className="hamburger-container">
         <p>More info</p>
         <Hamburger setIsMenuOpen={setIsMenuOpen1} isMenuOpen={isMenuOpen1} />
-        {isMenuOpen1 && (
-          <div className="banner__navigation-link-mobile-container">
-            <Hamburger setIsMenuOpen={setIsMenuOpen1} isMenuOpen={isMenuOpen1} />
-            <div className="banner__navigation-link-mobile">
-              {navigation.map((i, index) => {
-                return (
-                  <a className="banner__navigation-link-mobile-item" key={index} href="#">
-                    {i.title}
-                  </a>
-                );
-              })}
-            </div>
-          </div>
-        )}
       </div>
 
+      {isMenuOpen1 && (
+        <div className="banner__navigation-link-mobile-container">
+          <div className="banner__navigation-link-mobile">
+            {navigation.map((i, index) => {
+              return (
+                <a className="banner__navigation-link-mobile-item" key={index} href="#">
+                  {i.title}
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      )}
       <div className="banner__navigation">
         <div className="banner__navigation-link">
           {navigation.map((i, index) => {
