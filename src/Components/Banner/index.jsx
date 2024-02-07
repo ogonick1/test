@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import face from "../../assets/icon/girl-face.png";
+import face from "../../assets/icon/girl-face.webp";
 import android from "../../assets/icon/android.svg";
 import apple from "../../assets/icon/apple.svg";
 import pc from "../../assets/icon/dwnpc.svg";
@@ -29,7 +29,7 @@ const Banner = () => {
         <div className="banner__wrapper-info">
           <div className="banner__game">
             {" "}
-            <img className="banner__game-img" src={face} alt="game-img" />
+            <img  className="banner__game-img" src={face} alt="game-img" />
           </div>
           <div className="banner__wrapper-description">
             <div className="banner__description">

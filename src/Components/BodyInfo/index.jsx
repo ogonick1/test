@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../Card";
-import cardImg from "../../assets/icon/cardImg.jpg";
-import sidebar from "../../assets/icon/sidebar.png";
+import cardImg from "../../assets/icon/cardImg.webp";
+import sidebar from "../../assets/icon/sidebar.webp";
 import "./index.scss";
 
 const BodyInfo = () => {
@@ -58,7 +58,7 @@ const BodyInfo = () => {
         </section>
       </article>
       <aside className="info__ads">
-        <img src={sidebar} alt="sidebar" />
+        <img width={300} height={600} src={sidebar} alt="sidebar" />
       </aside>
     </main>
   );
