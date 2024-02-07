@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import face from "../../assets/icon/girl-face.webp";
 import android from "../../assets/icon/android.svg";
 import apple from "../../assets/icon/apple.svg";
@@ -10,7 +10,7 @@ import Hamburger from "../Hamburger";
 
 const Banner = () => {
   const [rating, setRating] = useState(5);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen1, setIsMenuOpen1] = useState(false);
   const btnItems = [
     { icon: android, title: "Android" },
     { icon: apple, title: "IOS" },
@@ -23,13 +23,20 @@ const Banner = () => {
     { title: "item" },
     { title: "item" },
   ];
+  useEffect(() => {
+    if (isMenuOpen1) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isMenuOpen1]);
   return (
     <section className="banner__container">
       <div className="banner__prod">
         <div className="banner__wrapper-info">
           <div className="banner__game">
             {" "}
-            <img  className="banner__game-img" src={face} alt="game-img" />
+            <img className="banner__game-img" src={face} alt="game-img" />
           </div>
           <div className="banner__wrapper-description">
             <div className="banner__description">
@@ -73,21 +80,23 @@ const Banner = () => {
       </div>
       <div className="hamburger-container">
         <p>More info</p>
-        <Hamburger setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
-      </div>
-      {isMenuOpen && (
-        <div className="banner__navigation-link-mobile-container">
-          <div className="banner__navigation-link-mobile">
-            {navigation.map((i, index) => {
-              return (
-                <a key={index} href="#">
-                  {i.title}
-                </a>
-              );
-            })}
+        <Hamburger setIsMenuOpen={setIsMenuOpen1} isMenuOpen={isMenuOpen1} />
+        {isMenuOpen1 && (
+          <div className="banner__navigation-link-mobile-container">
+            <Hamburger setIsMenuOpen={setIsMenuOpen1} isMenuOpen={isMenuOpen1} />
+            <div className="banner__navigation-link-mobile">
+              {navigation.map((i, index) => {
+                return (
+                  <a className="banner__navigation-link-mobile-item" key={index} href="#">
+                    {i.title}
+                  </a>
+                );
+              })}
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
+
       <div className="banner__navigation">
         <div className="banner__navigation-link">
           {navigation.map((i, index) => {
